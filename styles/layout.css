@@ -1,5 +1,29 @@
-@media (min-width: 600px){
-    main{
-        grid-template-columns: repeat(3, minmax(0, 1fr));
-    }
+@media (min-width: 600px) {
+  .categories {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  .product_list_container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+  }
+  .product_card {
+    display: grid;
+    grid-template-rows: subgrid;
+    grid-row: span 3;
+    gap: inherit;
+  }
+  .product_container{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 30px;
+    
+  }
+  
+ 
+  .layout{
+    display: flex;
+
+  }
+  
 }
